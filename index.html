@@ -16,8 +16,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Desserts</h1>
+  </header>
+  <main>
+    <section id="product-list"></section>
+    <section id="cart-section">
+      <h1 id="cart-text">Your Cart <span id="cart-text-number">(0)</span></h1>
+      <div id="cart">
+        <img src="assets/images/illustration-empty-cart.svg" alt="emptycart">
+        <p>Your added items would appear here</p>
+      </div>
+    </section>
+  </main>
 
- <div>
+  <div class="modal-overlay" id="modal-overlay">
+    <div id="order-modal" class="modal hidden">
+      <div class="modal-content">
+        <img src="assets/images/icon-order-confirmed.svg" alt="orderconfirmed">
+        <h2>Order Confirmed</h2>
+        <p>we hope you enjoy your food</p>
+        <div class="order-details" id="order-details"></div>
+        <button id="start-new-order-btn">Start New Order</button>
+      </div>
+    </div>
+  </div>
+
+
+ <!-- <div>
   <h1>Desserts</h1>
 
 <div class="items">
@@ -29,7 +55,7 @@
   <button class="cartbtn"><img src="./assets/images/icon-add-to-cart.svg" alt="addtocart"> Add to Cart</button>
   <b>Waffle with Berries</b>
   <p>Waffle</p>
-  <p class="price">6.50</p>
+  <p class="price">$6.50</p>
   </div>
 
   <div class="item">
@@ -40,7 +66,7 @@
   <button class="cartbtn"><img src="./assets/images/icon-add-to-cart.svg" alt="addtocart"> Add to Cart</button>
   <b>Vanilla Bean Crème Brûlée</b>
   <p>Crème Brûlée</p>
-  <p class="price">7.00</p>
+  <p class="price">$7.00</p>
   </div>
 
   <div class="item">
@@ -51,7 +77,7 @@
   <button class="cartbtn"><img src="./assets/images/icon-add-to-cart.svg" alt="addtocart"> Add to Cart</button>
   <b>Macaron Mix of Five</b>
   <p>Macaron</p>
-  <p class="price">8.00</p>
+  <p class="price">$8.00</p>
   </div>
 
   <div class="item">
@@ -62,7 +88,7 @@
   <button class="cartbtn"><img src="./assets/images/icon-add-to-cart.svg" alt="addtocart"> Add to Cart</button>
   <b>Classic Tiramisu</b>
   <p>Tiramisu</p>
-  <p class="price">5.50</p>
+  <p class="price">$5.50</p>
   </div>
 
   <div class="item">
@@ -73,18 +99,7 @@
   <button class="cartbtn"><img src="./assets/images/icon-add-to-cart.svg" alt="addtocart"> Add to Cart</button>
   <b>Pistachio Baklava</b>
   <p>Baklava</p>
-  <p class="price">4.00</p>
-  </div>
-
-  <div class="item">
-    <picture>
-    <source media="" srcset="./assets/images/image-baklava-desktop.jpg">
-    <img src="./assets/images/image-waffle-desktop.jpg" alt="">
-  </picture>
-  <button class="cartbtn"><img src="./assets/images/icon-add-to-cart.svg" alt="addtocart"> Add to Cart</button>
-  <b>Lemon Meringue Pie</b>
-  <p>Pie</p>
-  <p class="price">5.00</p>
+  <p class="price">$5.00</p>
   </div>
 
   <div class="item">
@@ -95,7 +110,7 @@
   <button class="cartbtn"><img src="./assets/images/icon-add-to-cart.svg" alt="addtocart"> Add to Cart</button>
   <b>Red Velvet Cake</b>
   <p>Cake</p>
-  <p class="price">4.50</p>
+  <p class="price">$4.50</p>
   </div>
 
   <div class="item">
@@ -106,7 +121,7 @@
   <button class="cartbtn"><img src="./assets/images/icon-add-to-cart.svg" alt="addtocart"> Add to Cart</button>
   <b>Salted Caramel Brownie</b>
   <p>Brownie</p>
-  <p class="price">4.50</p>
+  <p class="price">$4.50</p>
   </div>
 
   <div class="item">
@@ -117,7 +132,7 @@
   <button class="cartbtn"><img src="./assets/images/icon-add-to-cart.svg" alt="addtocart"> Add to Cart</button>
   <b>Vanilla Panna Cotta</b>
   <p>Panna Cotta</p>
-  <p class="price">6.50</p>
+  <p class="price">$6.50</p>
   </div>
   </div>
 
@@ -128,7 +143,8 @@
 
   <img src="./assets/images/illustration-empty-cart.svg" alt="empty">
   <p>Your added items will appear here</p>
-  </div>
+  <button>Confirm Order</button>
+  </div> -->
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
